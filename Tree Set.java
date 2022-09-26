@@ -1,0 +1,24 @@
+import java.util.Set;
+import java.util.TreeSet;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Set<Integer> set = new TreeSet<>();
+        set.add(50);
+        set.add(10);
+        set.add(40);
+        set.add(30);
+        System.out.println(set);
+        
+        set.remove(40);
+        
+        System.out.println(set.contains(40));
+        
+        System.out.println(set.size());
+        
+        set.clear();
+        
+        System.out.println(set.isEmpty());
+    }
+}
